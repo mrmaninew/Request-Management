@@ -1,0 +1,51 @@
+{
+    "bucket_definition": {
+        "2d97gkvh": {
+            "attributes": { },
+            "id": "2d97gkvh",
+            "labels": {
+                "label": "Request",
+                "labelp": "Requests"
+            },
+            "name": "request",
+            "schema_tag": "",
+            "slots": [
+                {
+                    "attributes": {
+                        "after_validation": "0",
+                        "before_validation": "0",
+                        "default_to_now": "0",
+                        "format_string": "MM/DD/YYYY HH:mm:ss"
+                    },
+                    "labels": {
+                        "label": "Requested",
+                        "labelp": "Requesteds"
+                    },
+                    "name": "requested",
+                    "type": "date_time"
+                },
+                {
+                    "attributes": {
+                        "bucket_name": "user",
+                        "buckets": "false",
+                        "choice_type": "dropdown",
+                        "hide_jumpto": "false",
+                        "multiple": "false",
+                        "none_option": "false",
+                        "slot_types": "false",
+                        "slots": "false",
+                        "sort_choices": "0",
+                        "use_parent_bucket": "false"
+                    },
+                    "labels": {
+                        "label": "Requestor",
+                        "labelp": "Requestors"
+                    },
+                    "name": "requestor",
+                    "type": "choice"
+                }
+            ],
+            "type": "records"
+        }
+    }
+}

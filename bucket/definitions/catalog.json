@@ -1,0 +1,84 @@
+{
+    "bucket_definition": {
+        "dynrypqz": {
+            "attributes": { },
+            "id": "dynrypqz",
+            "labels": {
+                "label": "catalog",
+                "labelp": "catalogs"
+            },
+            "name": "catalog",
+            "schema_tag": "",
+            "slots": [
+                {
+                    "attributes": {
+                        "maxlength": "0",
+                        "only_alphanum": "false",
+                        "only_uppercase": "false",
+                        "pattern_validation": "0"
+                    },
+                    "labels": {
+                        "label": "Item",
+                        "labelp": "Items"
+                    },
+                    "name": "item",
+                    "type": "string"
+                },
+                {
+                    "attributes": {
+                        "after_validation": "0",
+                        "before_validation": "0",
+                        "default_to_now": "0",
+                        "format_string": "MM/DD/YYYY HH:mm:ss"
+                    },
+                    "labels": {
+                        "label": "created",
+                        "labelp": "createds"
+                    },
+                    "name": "created",
+                    "type": "date_time"
+                },
+                {
+                    "attributes": {
+                        "format": "true",
+                        "greater_validation": "0",
+                        "greater_value": "0",
+                        "less_validation": "0",
+                        "less_value": "0",
+                        "range_max": "0",
+                        "range_min": "0",
+                        "range_validation": "0",
+                        "size": "small"
+                    },
+                    "labels": {
+                        "label": "count",
+                        "labelp": "counts"
+                    },
+                    "name": "count",
+                    "type": "integer"
+                },
+                {
+                    "attributes": {
+                        "bucket_name": "user",
+                        "buckets": "false",
+                        "choice_type": "dropdown",
+                        "hide_jumpto": "false",
+                        "multiple": "false",
+                        "none_option": "false",
+                        "slot_types": "false",
+                        "slots": "false",
+                        "sort_choices": "0",
+                        "use_parent_bucket": "false"
+                    },
+                    "labels": {
+                        "label": "Created By",
+                        "labelp": "Created Bies"
+                    },
+                    "name": "created_by",
+                    "type": "choice"
+                }
+            ],
+            "type": "records"
+        }
+    }
+}
